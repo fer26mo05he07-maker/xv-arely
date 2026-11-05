@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7ece8">
+  <meta name="description" content="Una invitación especial para celebrar mis XV años.">
+  <title>Mis XV Años | Valentina</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="envelope-wrap" aria-hidden="true">
+        <div class="envelope">
+          <div class="envelope-flap"></div>
+          <div class="wax-seal">✿</div>
+        </div>
+        <span class="flower flower-one">✿</span>
+        <span class="flower flower-two">❀</span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">CON MUCHO AMOR TE INVITO A CELEBRAR</p>
+        <p class="script-title">Mis XV Años</p>
+        <div class="ornament">✧ ── ♕ ── ✧</div>
+        <h1 data-field="nombre">Arely Valentina</h1>
+        <p class="intro">Hay momentos en la vida que se convierten en un sueño, y hoy uno de ellos comienza...</p>
+        <button class="primary-button" id="openInvitation" type="button">Abrir invitación <span>↓</span></button>
+        <p class="tiny-note">Una celebración para recordar siempre</p>
+      </div>
+      <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <span class="music-label">Activar música</span>
+      </button>
+      <audio id="invitationAudio" preload="none">
+        <source src="assets/tu-sangre-en-mi-cuerpo.mp3" type="audio/mpeg">
+      </audio>
+    </section>
+
+    <section class="invitation section-pad" id="invitacion">
+      <div class="corner corner-left">❧</div><div class="corner corner-right">❧</div>
+      <div class="monogram" aria-hidden="true"><span>XV</span><small>✧</small></div>
+      <div class="invitation-copy">
+        <p class="eyebrow">ESTÁS CORDIALMENTE INVITADO(A) A MIS</p>
+        <p class="script-heading">Quince Años</p>
+        <h2 data-field="nombre">Arely Valentina</h2>
+        <div class="gold-line"></div>
+        <p class="body-copy">Con la bendición de mis padres y el cariño de mi familia, quiero compartir contigo este día tan especial.</p>
+        <p class="family-line"><span data-field="padres">Manuel Vargas Arenas y Fatima Edith Arenas Mojica</span></p>
+        <p class="family-line">y la compañía de mis seres queridos</p>
+        <p class="event-date" data-field="fechaLarga">Domingo 10 de enero de 2027</p>
+      </div>
+    </section>
+
+    <section class="details section-pad" id="detalles">
+      <p class="eyebrow">UN DÍA, DOS MOMENTOS ESPECIALES</p>
+      <p class="script-heading">Celebremos juntos</p>
+      <div class="detail-grid">
+        <article class="detail-card">
+          <div class="detail-icon" aria-hidden="true">♧</div>
+          <h3>Ceremonia religiosa</h3>
+          <p class="place-name" data-field="iglesia">San Pedro Apostol</p>
+          <p class="detail-time" data-field="horaIglesia">2:00 p. m.</p>
+          <p class="address" data-field="direccionIglesia">Col. San Pedro de los Hernández</p>
+          <a class="map-button" data-map="iglesia" href="https://maps.google.com/" target="_blank" rel="noopener">⌖ Ver ubicación</a>
+        </article>
+        <div class="vertical-divider" aria-hidden="true"></div>
+        <article class="detail-card">
+          <div class="detail-icon" aria-hidden="true">♧</div>
+          <h3>Recepción</h3>
+          <p class="place-name" data-field="salon">Nombre del salón</p>
+          <p class="detail-time" data-field="horaSalon">3:00 p. m.</p>
+          <p class="address" data-field="direccionSalon">Calle Campanario #114 San Pedro de los Hernández</p>
+          <a class="map-button" data-map="salon" href="https://maps.google.com/" target="_blank" rel="noopener">⌖ Ver ubicación</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section-pad" id="cuenta">
+      <div class="countdown-flower" aria-hidden="true">❀</div>
+      <p class="eyebrow">CADA VEZ FALTA MENOS</p>
+      <p class="script-heading">Cuenta regresiva</p>
+      <div class="countdown" aria-label="Cuenta regresiva">
+        <div><strong id="days">00</strong><span>Días</span></div>
+        <div><strong id="hours">00</strong><span>Horas</span></div>
+        <div><strong id="minutes">00</strong><span>Minutos</span></div>
+        <div><strong id="seconds">00</strong><span>Segundos</span></div>
+      </div>
+      <p class="countdown-message" id="countdownMessage">Estoy contando los días para compartir este momento contigo.</p>
+    </section>
+
+    <section class="dress-code section-pad" id="importante">
+      <div class="dress-card">
+        <div class="dress-icon" aria-hidden="true">♕</div>
+       
+        <div>
+          <p class="eyebrow">DETALLES IMPORTANTES</p>
+          <h2>¡Tu presencia es mi regalo!</h2>
+          <p>Te espero con mucha ilusión. Procura llegar con anticipación para disfrutar cada momento.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="closing">
+      <div class="ornament">✧ ── ♕ ── ✧</div>
+      <p class="script-heading">Gracias por ser parte</p>
+      <p>de este momento tan especial.</p>
+      <p class="footer-name" data-field="nombre">Arely Valentina</p>
+      <a href="#inicio" class="back-top">Volver al inicio ↑</a>
+    </footer>
+  </main>
+  <script src="datos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
